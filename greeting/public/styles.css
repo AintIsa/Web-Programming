@@ -1,0 +1,14 @@
+* {
+    background-color: darkcyan;
+}
+.error{
+    color: red;
+}
+h1 {
+    color: green;
+    text-align: center;
+    font-display: 'Times New Roman', serif;
+}
+form {
+    text-align: center;
+}

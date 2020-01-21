@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Greeter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Greeting</h1>
+    <% if (errorMessage.length > 0) { %>
+        <% for (let entry of errorMessage) { %> 
+            <% if (entry.msg != null) { %>
+                <%= entry.msg %> <br>
+                <% entry.msg = null %>
+            <% } %>
+        <% } %>
+    <% } else { %>
+        <% for (let entry of messages) { %> 
+                <% if (entry.message != null || entry.checks != null) { %>
+                    <%= entry.message %><br>
+                    <%= entry.checks%><br>
+                    <% entry.message = null %>
+                    <% entry.checks = null %>
+                <% } %>
+        <% } %>
+    <% } %>
+    <form action="/greet" method="post">
+        <input name="name" type="text" placeholder="Write your name" required><br>
+        <input type="submit" value="Send">
+    </form>
+</body>
+
+</html>

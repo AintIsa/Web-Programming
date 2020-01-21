@@ -1,0 +1,23 @@
+{
+  "name": "guestbook",
+  "version": "1.0.0",
+  "description": "Guestbook is a simple web guestbook app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Guestbook",
+    "Express",
+    "Quest",
+    "chat"
+  ],
+  "author": "Nursultan Shabdanov nurs.shabdanov1105@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mysql2": "^2.0.2"
+  }
+}
